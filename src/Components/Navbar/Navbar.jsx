@@ -7,9 +7,9 @@ import { Menu, Icon } from 'antd'
 export default function Navbar () {
   return (
     <Menu mode='horizontal'>
-      <Menu.Item >
-        <Link to='/'>
-          <Icon type='home' /> Home
+      <Menu.Item>
+        <Link to='nowplaying'>
+          <Icon type='rocket' /> Movies in Theater
         </Link>
       </Menu.Item>
       <Menu.Item>
@@ -22,14 +22,15 @@ export default function Navbar () {
           <Icon type='like-o' /> Up Coming
         </Link>
       </Menu.Item>
-      <Menu.Item>
-        <Link to='nowplaying'>
-          <Icon type='rocket' /> Now Playing
-        </Link>
-      </Menu.Item>
+      
       <Menu.Item>
         <Link to='toprated'>
           <Icon type='star-o' /> Top Rated
+        </Link>
+      </Menu.Item>
+      <Menu.Item >
+        <Link to='/'>
+          <Icon type='home' /> Movie Search
         </Link>
       </Menu.Item>
     </Menu>
